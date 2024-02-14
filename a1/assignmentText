@@ -1,0 +1,19 @@
+This assignment consists of two independent parts:
+
+We extend the IMP language (as presented in the Notes section 2.1) with an additional command form,
+    c  ::=  ··· | repeat c0 until b
+with the informal meaning that the command c0 is executed repeatedly, until the termination condition b evaluates to true. Note that, unlike in while-loops, the condition is evaluated after each iteration of the loop; in particular, the loop body will always be executed at least once.
+
+Give the necessary big-step rule or rules for defining the formal semantics of repeat-loops, and prove the following semantic equivalence:
+
+    repeat c0 until b  ~  c0; if b then skip else repeat c0 until b
+
+For an example of a suitable reasoning style and level of detail, see the proof of Thm. 2.2 in the notes; in particular, do not attempt to show both directions of the biimplication in "~" at the same time.
+
+Show just the left-to-right direction of the following semantic equivalence:
+
+    x := 0; if y = 2 then x := x+1 else skip  ~  if 2 := y then x := 1 else x := 0
+
+(Beware of the difference "y = 2" vs. "2 = y" in the two if-conditions. Also, formally, all the numeric constants occurring in the expressions should have been overlined.) It is important that you argue explicitly using the formal semantics rules, not just your informal understanding of the language. Be especially clear about how/where you split into cases, and explain why you have covered all relevant possibilities for the shape of some (sub)derivation you are analyzing.
+
+Instead of writing out complete derivation trees, you may find it useful to build them up piecewise using named subderivations, so that their sizes (especially horizontally) stay manageable at all times. If you want to write out full derivation trees deeper than a few lines, you may find one or more of the LaTeX packages mentioned on the Resources page useful.
