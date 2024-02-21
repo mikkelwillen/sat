@@ -1,0 +1,8 @@
+2.2. Supply the missing cases for Theorem 2.19 and Lemma 2.20 having to do with
+sequencing commands (c0 ; c1 ).
+2.3. Supply the missing case for while-loops in Lemma 2.20. Hint: exploit Theorem 2.2.
+2.4. Complete the small-step semantics in Figure 2.2 by giving all the missing rules
+relating to boolean expressions. (The ones for conjunction are complete, and should
+not be extended or modified.)
+2.5. Prove Theorem 2.15 and Lemma 2.16 for the cases relating to conjunctions (EB-
+AndT and EB-AndF vs. SB-And1, SB-AndT, and SB-AndF).
